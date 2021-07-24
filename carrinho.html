@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meu carrinho" />
+  <meta name="author" content="Karin Marques" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Meu Carrinho</title>
+</head>
+
+<body>
+  <header role="banner" id="menu">
+    <div class="container">
+      <img class="logo" src="assets/Logo-hiring.png" alt="logo vtex" title="logo vtex" />
+      <nav role="navigation menu" aria-level="main navigation">
+        <a href="index.html" role="menuitem" title="Início"> Início </a>
+        <a href="index.html#products" role="menuitem" title="promoções">Promoções</a>
+        <a href="index.html#cadastro" role="menuitem" title="cadastre-se">Cadastre-se</a>
+        </nav>
+    </div>
+  </header>
+  <section class="carrinho">
+      <div class="itens">
+        <h1>Itens Selecionados:</h1>
+        <div id="itens"></div>
+        <div>Total: <span id="total"></span></div>
+      </div>
+      <button type="button" onclick=" localStorage.clear(); location.reload();">
+        Limpar carrinho
+      </button>
+    </section>
+</body>
+<script src="js/carrinho.js"></script>
+
+</html>

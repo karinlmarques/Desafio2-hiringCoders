@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site e-commerce" />
+  <meta name="author" content="Karin Marques" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <title>Promoções</title>
+</head>
+
+<body>
+  <header role="banner" id="menu">
+    <div class="container">
+      <img class="logo" src="assets/Logo-hiring.png" alt="logo hiring" title="logo vtex" />
+      <nav role="navigation menu" aria-level="main navigation">
+        <a href="index.html" role="menuitem" title="Início"> Início </a>
+        <a href="index.html#products" role="menuitem" title="promoções">Promoções</a>
+        <a href="index.html#cadastro" role="menuitem" title="cadastre-se">Cadastre-se</a>
+        <a href="carrinho.html">
+          <img class="cart" src="assets/cart.png" alt="carrinho" title="carrinho de compras" />
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main role="main" class="container-promo">
+    <img src="assets/promo.png" alt="promoção" title="logo super promoção" />
+    <section class="promo">
+      <h1>Queima de estoque</h1>
+      <ul>
+        <li>Descontos de até 70%;</li>
+        <li>Ofertas válidas a semana inteira</li>
+        <li>Promoções com descontos específicos a cada dia da semana</li>
+        <li>Se inscreva para saber de todas as promoções</li>
+        <a href="index.html#cadastro">
+          <button>Clique aqui para se inscrever</button></a>
+      </ul>
+    </section>
+  </main>
+  <section id="products">
+    <div class="titulo-produto">
+      <h1>Alguns dos produtos que estarão na promoção:</h1>
+    </div>
+    <section class="card-container-product" id="produto">
+      <div class="prodtd">
+        <h3 id="nome1" value="Relógio 1" class="nomeprod">Relógio 1</h3>
+        <img src="assets/rel1.jpg" alt="foto relógio1" title="relógio 1" />
+        <p class="description">Descrição do produto</p>
+        <span id="preco1" value="200" class="preco">Preço: R$ 200,00</span>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd1" class="qtd">
+        <button type="button" id="button1" onclick="AddCarrinho('Relógio 1', document.getElementById('qtd1').value, '200.00', 1)">
+          Adicionar ao carrinho </button>
+      </div>
+      </div>
+
+      <div class="prodtd">
+        <h3 id="nome2" class="nomeprod">Relógio 2</h3>
+        <img src="assets/rel2.jpg" alt="foto relógio2" title="relógio 2" />
+        <p class="description">Descrição do produto</p>
+        <span id="preco2" class="preco">Preço: R$ 150,00</span>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd2" class="qtd">
+        <button type="button" onclick="AddCarrinho('Relógio 2', document.getElementById('qtd2').value, '150.00', 2)">
+          Adicionar ao carrinho </button>
+      </div>
+
+      <div class="prodtd">
+        <h3 class="nomeprod" id="nome3">Relógio 3</h3>
+        <img src="assets/rel3.jpg" alt="foto relógio3" title="relógio  3" />
+        <p class=" description">Descrição do produto</p>
+        <span class="preco" id="preco3">Preço: R$ 300,00</span>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd3" class="qtd">
+        <button type="button" onclick="AddCarrinho('Relógio 3', document.getElementById('qtd3').value, '300.00', 3)">
+          Adicionar ao carrinho </button>
+      </div>
+      <div class="prodtd">
+        <h3 class="nomeprod" id="nome4">Relógio 4</h3>
+        <img src="assets/rel4.jpg" alt="foto relógio4" title="relógio 4" />
+        <p class="description">Descrição do produto</p>
+        <span class="preco" id="preco4">Preço: R$ 100,00</span>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd4" class="qtd">
+        <button type="button" onclick="AddCarrinho('Relógio 4', document.getElementById('qtd4').value, '100.00', 4)">
+          Adicionar ao carrinho </button>
+      </div>
+      <div class="prodtd">
+        <h3 class="nomeprod" id="nome5">Relógio 5</h3>
+        <img src="assets/rel5.jpg" alt="foto relógio5" title="relógio 5" />
+        <p class="description">Descrição do produto</p>
+        <span class="preco" id="preco5">Preço: R$ 250,00</span>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd5" class="qtd">
+        <button type="button" onclick="AddCarrinho('Relógio 5', document.getElementById('qtd5').value, '250.00', 5)">
+          Adicionar ao carrinho </button>
+      </div>
+      <div class="prodtd">
+        <h3 class="nomeprod" id="nome6">Relógio 6</h3>
+        <img src="assets/rel6.jpg" alt="foto relógio6" title="relógio 6" />
+        <p class="description">Descrição do produto</p>
+        <span class="preco" id="preco6">Preço: R$ 90,00</span>
+        Quantidade: <input type="number" value="1" min="1" max="10" id="qtd6" class="qtd">
+        <button id="botao6" type="button" onclick="AddCarrinho()" value="'Relógio 6', document.getElementById('qtd6').value, '90.00', 6">
+          Adicionar ao carrinho </button>
+      </div>
+      </div>
+    </section>
+    <section id="cadastro">
+      <form id="form">
+        <fieldset>
+          <legend>Cadastre-se:</legend>
+          <label for="nome">Nome: </label>
+          <input class="input" type="text" placeholder="digite seu nome" id="nome" />
+          <label for="email">Email:</label>
+          <input class="input" type="text" placeholder="digite um seu e-mail" id="email" />
+          <label for="tel">Telefone:</label>
+          <input class="input" type="text" placeholder="digite seu telefone" id="tel" />
+          <label for="end">Endereço:</label>
+          <input class="input" type="text" placeholder="digite seu endereço" id="end" />
+          <label for="bairro">Bairro:</label>
+          <input class="input" type="text" placeholder="digite seu bairro" id="bairro" />
+          <label for="cidade">Cidade:</label>
+          <input class="input" type="text" placeholder="digite sua cidade" id="cidade" />
+          <label for="estado">Estado:</label>
+          <input class="input" type="text" placeholder="digite seu estado" id="estado" />
+          <label for="cep">CEP:</label>
+          <input class="input" type="text" placeholder="digite seu CEP" id="cep" />
+          <input class="input" type="submit" value="Cadastrar" id="Enviar" />
+        </fieldset>
+      </form>
+    </section>
+    <footer role="contentinfo">
+      <p>Todos os direitos reservados</p>
+      <p>Desenvolvido por Karin Marques</p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="js/calculaCarrinho.js"></script>
+ 
+</html>
